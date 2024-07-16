@@ -6,6 +6,8 @@ import Leftimg from './components/Leftimg';
 import Register from './components/Register';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import Recovery from './components/Recovery';
+
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/" element={<Login />} />
+                <Route path='/Recovery' element={<Recovery/>} />
+
               </Routes>
             </Col>
           </Row>
