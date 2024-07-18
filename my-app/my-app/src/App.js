@@ -7,6 +7,8 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import Recovery from './components/Recovery';
+import Emailrec from './components/Emailrec';
+import Menutoken from './components/token';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/" element={<Login />} />
+                <Route path="/Emailrec" element={<Emailrec/>} />
+                <Route path='/token' element={<Menutoken/>} />
                 <Route path='/Recovery' element={<Recovery/>} />
 
               </Routes>
