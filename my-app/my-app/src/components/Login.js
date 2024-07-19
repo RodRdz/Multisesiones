@@ -88,6 +88,9 @@ function Login() {
             <div className="text-left">
               <Link to="/register" className="btn btn-link">¿No tienes cuenta? Crea una aquí</Link>
             </div>
+            <div className="text-left">
+              <Link to="/emailrec" className="btn btn-link">¿Olvidaste la Contraseña?</Link>
+            </div>
             <div className="text-center">
               <Button variant="secondary" type="submit" className="me-2">Iniciar sesión</Button>
               <Button
