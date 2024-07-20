@@ -98,6 +98,7 @@ const generateToken = (email) => {
 emailApp.post('/send-email', async (req, res) => {
     const { to, subject, text, html } = req.body;
     const token = generateToken(to);
+    
 
     try {
         await transporter.sendMail({
@@ -108,7 +109,7 @@ emailApp.post('/send-email', async (req, res) => {
             html: html || `<b>Su token de autenticación es: ${token}</b>`,
         });
 
-        res.status(200).send({ message: 'Email sent' });
+        res.status(200).send({ message: 'Email sent', token: token });
     } catch (error) {
         res.status(500).send({ error: 'Failed to send email', details: error });
     }

@@ -19,6 +19,8 @@ function Menutoken() {
     try {
       const response = await axios.post('http://localhost:3001/verify-token', { token });
       setMessage(response.data.message);
+  
+
       if (response.status === 200) {
         // Redirige a la página de recuperación si el token es válido
         navigate('/Recovery');

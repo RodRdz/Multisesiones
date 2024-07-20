@@ -24,7 +24,9 @@ function Emailrec() {
         to: email,
       });
       if (response.status === 200) {
+        console.log('Token:', response.data.token);
         navigate('/token');
+        
       }
       setMessage('Email sent: ' + response.data.message);
     } catch (error) {
