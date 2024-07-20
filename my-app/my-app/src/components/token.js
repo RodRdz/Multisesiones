@@ -45,7 +45,9 @@ function Menutoken() {
             value={token}
             onChange={handleTokenChange}
           />
+          <div className="d-grid gap-2 col-6 mx-auto mt-4">
           <button type="submit" className="btn btn-primary mt-4">Subir Token</button>
+          </div>
         </form>
 
         {message && <div className="mt-3 text-center">{message}</div>}
