@@ -55,7 +55,7 @@ function Login() {
     <Container className="d-flex align-items-center justify-content-center h-100">
       <Row className="justify-content-center w-100">
         <Col md={8}>
-          <h2 className="fw-bold text-center py-3">Inicio de Sesión</h2>
+          <h2 className="fw-bold text-center py-3">Inicio de Sesión en 2025</h2>
           <Form noValidate validated={validated} onSubmit={handleSubmit} className="needs-validation">
             <Form.Group controlId="email">
               <Form.Label>Correo Electrónico</Form.Label>
