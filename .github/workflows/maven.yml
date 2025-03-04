@@ -45,15 +45,20 @@ jobs:
     - name: Ejecución de Pruebas
       run: mvn test
       working-directory: Karate-DSL-API-Testing
-      
-    - name: Revertir cambios si las pruebas fallan   
-      if: failure()  # Solo se ejecuta si las pruebas fallan
+
+    - name: Configurar credenciales de Git
       run: |
         git config --global user.name "RodRdz"
         git config --global user.email "rodrigo.20.6.03@gmail.com"
+        git config --global credential.helper store  
+
+
+    - name: Revertir cambios si las pruebas fallan   
+      if: failure()  # Solo se ejecuta si las pruebas fallan
+      run: |
         git revert --no-commit HEAD
         git commit -m "Revert: Se deshacen cambios por pruebas fallidas"  
-        git push origin main
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/RodRdz/Multisesiones.git main
 
     # - name: Enviar notificación por correo si las pruebas fallan
     #     # Solo se ejecuta si las pruebas fallan
