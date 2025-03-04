@@ -38,9 +38,9 @@ jobs:
     # - name: Ejecucion de Pruebas
     #   run:  mvn test --file Karate-DSL-API-Testing/pom.xml
 
-    - name: Instalar dependencias con Maven
-      run: mvn clean install
-      working-directory: Karate-DSL-API-Testing
+    # - name: Instalar dependencias con Maven
+    #   run: mvn clean install
+    #   working-directory: Karate-DSL-API-Testing
   
     - name: Ejecución de Pruebas
       run: mvn test
