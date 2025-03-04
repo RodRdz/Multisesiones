@@ -23,7 +23,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Clonacion del Repositorio
-      run: git clone https://github.com/RodRdz/Karate-DSL-API-Testing.gi
+      run: git clone https://github.com/RodRdz/Karate-DSL-API-Testing.git
 
     - name: Set up JDK 17
       uses: actions/setup-java@v4
