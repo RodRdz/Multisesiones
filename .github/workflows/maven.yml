@@ -9,10 +9,15 @@
 name: Pruebas para aprobar el puch XD
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  #push:
+   # branches: [ "main" ]
+  #pull_request:
+   # branches: [ "main" ]
+
+  workflow_dispatch:
+  schedule:
+  - cron: '*/10 * * * *'
+   
 
 jobs:
   test: 
