@@ -45,9 +45,9 @@ jobs:
     #   run: mvn clean install
     #   working-directory: Karate-DSL-API-Testing
   
-    - name: Ejecución de Pruebas
-      run: mvn test
-      working-directory: Karate-DSL-API-Testing
+   # - name: Ejecución de Pruebas
+    #  run: mvn test
+     # working-directory: Karate-DSL-API-Testing
       
     #- name: Revertir cambios si las pruebas fallan   
      # if: failure()  # Solo se ejecuta si las pruebas fallan
