@@ -50,14 +50,7 @@ jobs:
     - name: Ejecución de Pruebas
       run: mvn test
       working-directory: Karate-DSL-API-Testing
-
-    - name: Configurar credenciales de Git
-      run: |
-        git config --global user.name "RodRdz"
-        git config --global user.email "rodrigo.20.6.03@gmail.com"
-        git config --global credential.helper store  
-
-
+      
     #- name: Revertir cambios si las pruebas fallan   
      # if: failure()  # Solo se ejecuta si las pruebas fallan
       #run: |
